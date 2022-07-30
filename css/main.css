@@ -361,6 +361,8 @@ img {
   background-size: 1134px;
   margin-left: 133px;
   margin-right: auto;
+  -webkit-animation: next 5s linear;
+          animation: next 5s linear;
 }
 
 .smash {
@@ -453,6 +455,47 @@ img {
           animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes next {
+  0% {
+    transform: translatey(0px) translatex(0px);
+  }
+  20% {
+    transform: translatey(0px) translatex(250px);
+  }
+  40% {
+    transform: translatey(0px) translateX(500px);
+  }
+  60% {
+    transform: translatey(0px) translatex(750px);
+  }
+  80% {
+    transform: translatey(0px) translate(1000px);
+  }
+  100% {
+    transform: translatey(0px) translate(1250px);
+  }
+}
+
+@keyframes next {
+  0% {
+    transform: translatey(0px) translatex(0px);
+  }
+  20% {
+    transform: translatey(0px) translatex(250px);
+  }
+  40% {
+    transform: translatey(0px) translateX(500px);
+  }
+  60% {
+    transform: translatey(0px) translatex(750px);
+  }
+  80% {
+    transform: translatey(0px) translate(1000px);
+  }
+  100% {
+    transform: translatey(0px) translate(1250px);
+  }
+}
 @-webkit-keyframes smash {
   0% {
     transform: scaleY(1);
@@ -461,7 +504,6 @@ img {
     transform: scaleY(1);
   }
 }
-
 @keyframes smash {
   0% {
     transform: scaleY(1);
