@@ -1,5 +1,5 @@
 :root{
-   --animation-duration:  0.7s;
+   --animation-duration:  2s;
 }
 
 .suport{
@@ -11,7 +11,7 @@
     height: 850px;
     text-align: center;
     contain: "";
-    background-image: url(../../imeg/professional-basketball-court-arena-backgrounds-background-169169050.jpg);
+    background-image: url(../../imeg/car.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: calc(50% + -76px);
@@ -23,7 +23,6 @@
 }
 
 .smash{
-   
     position: absolute;
     display: inline-block;
     align-items: center;
@@ -42,43 +41,95 @@
     animation-timing-function: ease-in-out;
     transform-origin: bottom;
 }
+
+.smash1{
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    margin-top: 364px;
+    margin-top: 390px;
+    margin-left: -153px;
+    -webkit-animation-name: smash1;
+    animation-name: smash1;
+    -webkit-animation-duration: var(--animation-duration);
+    animation-duration: var(--animation-duration);
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    transform-origin: bottom;
+}
+
 .shadow,.rotateimg{
    border-radius: 50%;
    display: inline-block;
-   width: 200px;
-   height: 200px;
-}
-.shadow{
-    animation-name: shadow;
-    animation-duration: var(--animation-duration);
-    animation-direction:inherit;
-    animation-timing-function:ease-out;
-    animation-iteration-count: infinite;
+   width: 141px;
+   height: 141px;
+   position: absolute;
+   left: 94px;
+   top: -47px;
+ }
+// .shadow{
+//     animation-name: shadow;
+//     animation-duration: var(-animation-duration);
+//     animation-direction:inherit;
+//     animation-timing-function:ease-out;
+//     animation-iteration-count: inherit;
    
 
-}
+// }
 .rotateimg{
-    background-image: url(../../imeg/basketball-basket-ball-png-image-adidas-nike-cosco-25.png);
+    content: "";
+    background-image: url(../../imeg/balon2.png);
+    background-repeat: no-repeat;
     background-size: 100%;
     animation-name: rotate;
     animation-duration:calc( var(--animation-duration)*0.9);
     animation-timing-function: linear;
-    animation-iteration-count:inherit;
-}
-@keyframes shadow{
-    0%{
-        transform: translateY(0) ;
-        box-shadow: 20px 20px 10px #444466;
-    }
-    100%{
-       transform: translateY(-360px) ;
-       box-shadow: 20px 350px 250px #444466; 
-    }
-}
+    animation-iteration-count:infinite;
+ }
+
+
+ .shadow1,.rotateimg2{
+    border-radius: 50%;
+    display: inline-block;
+    width: 137px;
+    height: 137px;
+    position: absolute;
+    left: -164px;
+    top: -50px;
+ }
+
+ .rotateimg2{
+    content: "";
+    background-image: url(../../imeg/balon2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-name: rotate;
+    animation-duration:calc( var(--animation-duration)*0.9);
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+ }
+
+
+
+
+// @keyframes shadow{
+//     0%{
+//         transform: translateY(0) ;
+//         box-shadow: 20px 20px 10px #444466;
+//     }
+//     100%{
+//        transform: translateY(-360px) ;
+//        box-shadow: 20px 350px 250px #444466; 
+//     }
+// }
 
 @keyframes smash{
     0%{
-        transform: scaleY(0.5);
+        transform: scaleY(1);
     }
     19%{
         transform: scaleY(1);

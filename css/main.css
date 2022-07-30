@@ -342,7 +342,7 @@ img {
 }
 
 :root {
-  --animation-duration: 0.7s;
+  --animation-duration: 2s;
 }
 
 .suport {
@@ -353,7 +353,7 @@ img {
   height: 850px;
   text-align: center;
   contain: "";
-  background-image: url(../../imeg/professional-basketball-court-arena-backgrounds-background-169169050.jpg);
+  background-image: url(../../imeg/car.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: calc(50% - 76px);
@@ -383,28 +383,40 @@ img {
   transform-origin: bottom;
 }
 
+.smash1 {
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  margin-top: 364px;
+  margin-top: 390px;
+  margin-left: -153px;
+  -webkit-animation-name: smash1;
+  animation-name: smash1;
+  -webkit-animation-duration: var(--animation-duration);
+  animation-duration: var(--animation-duration);
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom;
+}
+
 .shadow, .rotateimg {
   border-radius: 50%;
   display: inline-block;
-  width: 200px;
-  height: 200px;
-}
-
-.shadow {
-  -webkit-animation-name: shadow;
-          animation-name: shadow;
-  -webkit-animation-duration: var(--animation-duration);
-          animation-duration: var(--animation-duration);
-  -webkit-animation-direction: inherit;
-          animation-direction: inherit;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  width: 141px;
+  height: 141px;
+  position: absolute;
+  left: 94px;
+  top: -47px;
 }
 
 .rotateimg {
-  background-image: url(../../imeg/basketball-basket-ball-png-image-adidas-nike-cosco-25.png);
+  content: "";
+  background-image: url(../../imeg/balon2.png);
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-animation-name: rotate;
           animation-name: rotate;
@@ -412,42 +424,47 @@ img {
           animation-duration: calc(var(--animation-duration) * 0.9);
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-iteration-count: inherit;
-          animation-iteration-count: inherit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes shadow {
-  0% {
-    transform: translateY(0);
-    box-shadow: 20px 20px 10px #444466;
-  }
-  100% {
-    transform: translateY(-360px);
-    box-shadow: 20px 350px 250px #444466;
-  }
+.shadow1, .rotateimg2 {
+  border-radius: 50%;
+  display: inline-block;
+  width: 137px;
+  height: 137px;
+  position: absolute;
+  left: -164px;
+  top: -50px;
 }
 
-@keyframes shadow {
-  0% {
-    transform: translateY(0);
-    box-shadow: 20px 20px 10px #444466;
-  }
-  100% {
-    transform: translateY(-360px);
-    box-shadow: 20px 350px 250px #444466;
-  }
+.rotateimg2 {
+  content: "";
+  background-image: url(../../imeg/balon2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: calc(var(--animation-duration) * 0.9);
+          animation-duration: calc(var(--animation-duration) * 0.9);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @-webkit-keyframes smash {
   0% {
-    transform: scaleY(0.5);
+    transform: scaleY(1);
   }
   19% {
     transform: scaleY(1);
   }
 }
+
 @keyframes smash {
   0% {
-    transform: scaleY(0.5);
+    transform: scaleY(1);
   }
   19% {
     transform: scaleY(1);
